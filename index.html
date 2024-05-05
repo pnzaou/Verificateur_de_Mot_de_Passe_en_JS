@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificateur de mot de passe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="container">
+                <form action="">
+                    <label for="mdp">Mot de passe</label>
+                    <div class="in-eyes">
+                        <input type="password" id="mdp" required>
+                        <p class="yeux">👀</p>
+                    </div>
+                    <button type="submit">Connexion</button>
+                </form>
+            </div>
+            <div id="verification">
+                <h3>Le mot de passe doit respecter les conditions suivantes</h3>
+                <p id="letter" class="invalid">Avoir au moins une lettre minuscule</p>
+                <p id="capital" class="invalid">Avoir au moins une lettre majuscule</p>
+                <p id="number" class="invalid">Avoir au moins un chiffre</p>
+                <p id="length" class="invalid">Avoir au moins 8 caractères</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
